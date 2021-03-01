@@ -8,7 +8,7 @@ def _get_resized_chessboard(chessboard_img_path):
     img_data = PIL.Image.open(chessboard_img_path).convert('RGB')
     return img_data.resize([256, 256], PIL.Image.BILINEAR)
 
-def get_chessboard_tiles(chessboard_img_path, use_grayscale=True):
+def get_chessboard_tiles(chessboard_img_path, use_grayscale=False):
     """ chessboard_img_path = path to a chessboard image
         use_grayscale = true/false for whether to return tiles in grayscale
 

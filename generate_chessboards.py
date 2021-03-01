@@ -85,23 +85,23 @@ def jinchess_img_url_template():
 
 
 if __name__ == '__main__':
-    # for i in range(100):
-    #     generate_random_chessboards(1, jinchess_img_url_template(), "-KQRBNPkqrbnp")
-    generate_random_chessboards(
-        5, "http://www.fen-to-image.com/image/32/{}"
-    )
-    generate_random_chessboards(
-        5, "https://chessdiagram.online/stilldiagram.php?d=_{}&q=", "_KQRBNPkqrbnp"
-    )
-    generate_random_chessboards(
-        5, "https://chessdiagram.online/stagram.php?d=_{}&s=0&q=", "_KQRBNPkqrbnp"
-    )
-    generate_random_chessboards(
-        5, "https://chessdiagram.online/stagram.php?d=_{}&s=1&q=", "_KQRBNPkqrbnp"
-    )
-    generate_random_chessboards(
-        5, "https://chessdiagram.online/stagram.php?d=_{}&s=2&q=", "_KQRBNPkqrbnp"
-    )
+    for i in range(10):
+        generate_random_chessboards(1, jinchess_img_url_template(), "-KQRBNPkqrbnp")
     # generate_random_chessboards(
-    #     1, "https://backscattering.de/web-boardimage/board.png?fen={}&size=256"
+    #     5, "http://www.fen-to-image.com/image/32/{}"
     # )
+    # generate_random_chessboards(
+    #     5, "https://chessdiagram.online/stilldiagram.php?d=_{}&q=", "_KQRBNPkqrbnp"
+    # )
+    # generate_random_chessboards(
+    #     5, "https://chessdiagram.online/stagram.php?d=_{}&s=0&q=", "_KQRBNPkqrbnp"
+    # )
+    # generate_random_chessboards(
+    #     5, "https://chessdiagram.online/stagram.php?d=_{}&s=1&q=", "_KQRBNPkqrbnp"
+    # )
+    # generate_random_chessboards(
+    #     5, "https://chessdiagram.online/stagram.php?d=_{}&s=2&q=", "_KQRBNPkqrbnp"
+    # )
+    generate_random_chessboards(
+        1, "https://backscattering.de/web-boardimage/board.png?fen={}&size=256"
+    )
